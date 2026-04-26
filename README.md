@@ -20,7 +20,7 @@ La validación final siempre la tiene la cátedra.
 - `PRACTICA/PRACTICA1`: ejercicios de la práctica 1.
 - `PRACTICA/PRACTICA2`: ejercicios de la práctica 2.
 - `PRACTICA/PRACTICA3`: ejercicios de la práctica 3.
-- `TEORIA`: apuntes teóricos.
+- `TEORIA`: slides de las explicaciones teóricas.
 
 ## Estructura general
 
@@ -43,6 +43,6 @@ Si lo usás para preparar entregas, revisá cada programa, entendé la lógica y
 
 ## Buena cursada
 
-Espero que te sirva y te ahorre tiempo de organización.
+Espero que te sirva y te haga mas amena la cursada.
 
 ![mood](https://media1.tenor.com/m/NqnzaKLw_jsAAAAC/ight-bet.gif)
