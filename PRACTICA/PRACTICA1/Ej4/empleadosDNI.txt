@@ -1,0 +1,7 @@
+||||| EMPLEADOS |||||
+Numero de empleado: 12
+Apellido de empleado: Rojas
+Nombre de empleado: Agustina
+Edad de empleado: 23
+DNI de empleado: 0
+

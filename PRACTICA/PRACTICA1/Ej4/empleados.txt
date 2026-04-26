@@ -1,0 +1,19 @@
+||||| EMPLEADOS |||||
+Numero de empleado: 58
+Apellido de empleado: Rodriguez
+Nombre de empleado: Felipe
+Edad de empleado: 19
+DNI de empleado: 47321344
+
+Numero de empleado: 79
+Apellido de empleado: Rojas
+Nombre de empleado: Ricardo
+Edad de empleado: 78
+DNI de empleado: 10832112
+
+Numero de empleado: 43
+Apellido de empleado: Lopez
+Nombre de empleado: Veronica
+Edad de empleado: 51
+DNI de empleado: 24493212
+

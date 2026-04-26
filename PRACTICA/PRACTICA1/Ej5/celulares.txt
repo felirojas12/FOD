@@ -1,0 +1,12 @@
+101 250000.00   Samsung
+15 5   Galaxy A15 128GB
+Galaxy A15
+102 320000.00   Motorola
+3 6   Moto G84 256GB col
+Moto G84
+104 950000.00   Apple
+2 4   iPhone 15 256GB ne
+iPhone 15
+105 100000.00   Xiaomi
+4 2  
+Xiaomi Redmi Note

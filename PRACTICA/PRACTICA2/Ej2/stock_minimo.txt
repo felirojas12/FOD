@@ -1,0 +1,2 @@
+Codigo: 2 | Nombre: Detergente | Precio: 200.00 | Stock: 0 | Stock minimo: 15
+Codigo: 3 | Nombre: Jabon | Precio: 150.00 | Stock: -20 | Stock minimo: 10
