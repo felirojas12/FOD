@@ -1,4 +1,4 @@
-# FOD - Prácticas 2026
+# Fundamentos de Organización de Datos - Prácticas 2026
 
 > Repositorio de práctica para la materia **FOD** (2do año, 1er semestre).
 
