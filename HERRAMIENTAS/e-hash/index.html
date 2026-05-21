@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <title>E-HASH</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" type="text/css" href="js/css/style.css" />
+  <link type="text/css" href="js/jquery-ui/css/cupertino/jquery-ui-1.8.2.custom.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="js/css/favicon.ico"/> 
+  
+  <script type="text/javascript" src="js/jquery/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui/js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui/js/jquery-ui-1.8.2.custom.min.js"></script>
+  <script src="js\jquery-ui\development-bundle\ui\jquery.effects.fold.js"></script>
+  
+  <script src="js\jquery-ui\development-bundle\ui\jquery.ui.draggable.js"></script>
+  <script src="js\jquery-ui\development-bundle\ui\jquery.ui.dialog.js"></script>  
+ 
+  <script type="text/javascript" src="js/metodos/memoria.js"></script>
+  <script type="text/javascript" src="js/metodos/funciones.js"></script>
+  <script type="text/javascript" src="js/metodos/constantes.js"></script>	
+  <script type="text/javascript" src="js/metodos/validaciones.js"></script>
+  <script type="text/javascript" src="js/view/views.js"></script>
+  <script type="text/javascript" src="js/metodos/index.js"></script>   
+    
+</head>
+<body>
+  <!-- sidebar to the hash function  -->
+  <div id="sidebar_function" class="function_panel">
+    <div class="sidebar_top"></div>
+    <div class="sidebar_item">    
+      <!-- insert the page content here -->
+      <h1>Funci&oacute;n de Hash</h1>
+      <div id="panel-funcion"></div>
+      <div id="panel-segunda-funcion"></div>                               
+    </div>
+    <div class="sidebar_base"></div>
+  </div> 
+   
+  <!-- sidebar for selected parameters -->
+  <div id="sidebar_parameters" class="menu_params">
+  <div class="sidebar_top"></div>
+  <div class="sidebar_item">
+    <h1>Par&aacute;metros</h1>
+    <div id="params"></div>
+  </div>
+  <div class="sidebar_base"></div>  
+  </div>
+  
+  <!-- sidebar to the menu of operations -->
+  <div id="sidebar_menu_operation" class="">
+  <div class="sidebar_top"></div>
+  <div class="sidebar_item">
+     <h1>Operaciones</h1>
+     <div class="form_settings">
+       <p><span>Clave</span><input id="clavenueva" type="text" name="claveAInsertar" style="width: 140px;" maxlength="8"/>&nbsp;<a href="#" id="virtual-keyboard"><img src="imagenes/keyboard.png" title="Teclado Virtual"/></a></p> 
+       <a href="#" id="insertar-clave"><img src="imagenes/add.png" title="Insertar clave"/></a>
+       <a href="#" id="eliminar-clave"><img src="imagenes/delete.png" title="Eliminar clave"/></a>
+       <a href="#" id="buscar-clave"><img src="imagenes/search.png" title="Buscar clave"/></a>
+       &nbsp;
+       <a href="#" id="close-simulation"><img src="imagenes/close.png" title="Finalizar Simulación"/></a>
+     </div> 
+     <div id="container_progress"><a href="#" style="padding-left: 40%;"><img src="imagenes/progress.gif" title="Operaci&oacute;n en progreso"/></a></div>
+   </div> 
+   <div class="sidebar_base"></div>
+  </div>  
+  
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the logo text -->
+          <h1>e-<span class="logo_colour">hash</span></h1>
+          <h2>Herramienta de software para la ense&ntilde;anza de t&eacute;cnicas de dispersi&oacute;n de archivos.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li id="item0"><a id="menu0" href="#">INICIO</a></li>
+          <li id="item1"><a id="menu1" href="#">TIPO DE DISPERSION</a></li>
+          <li id="item2"><a id="menu2" href="#">FUNCION DE DISPERSION</a></li>
+          <li id="item3"><a id="menu3" href="#">ESPACIO DE MEMORIA</a></li>
+          <li id="item4"><a id="menu4" href="#">RESOLUCION DE COLISIONES</a></li>
+          <li id="item5"><a id="menu5" href="#">SIMULACION</a></li>
+        </ul>
+      </div>
+    </div>
+   
+    <div id="site_content">      
+      <div id="sidebar_container">
+              
+        <div id="sidebar_historial" class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h1>Historial de operaciones</h1>
+            <h6 id="hist"></h6>                                                          
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      
+        <div id="sidebar_help" class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h1>Ayuda</h1>
+            <ul>
+              <li><a href="./docs/ayuda_dispersion_de_archivos.pdf" target="_blanck">Dispersi&oacute;n de archivos</a></li>
+              <li><a href="./docs/ayuda_funcion_de_dispersion.pdf" target="_blanck">Funci&oacute;n de dispersi&oacute;n</a></li>
+              <li><a href="./docs/ayuda_densidad_de_empaquetamiento.pdf" target="_blanck">Densidad de empaquetamiento</a></li>
+              <li><a href="./docs/ayuda_tratamiento_de_colisiones.pdf" target="_blanck">Tratamiento de colisiones</a></li>
+              <li><a href="./docs/ayuda_dispersion_espacio_direccionamiento_dinamico.pdf" target="_blanck">Dispersi&oacute;n con espacio de direccionamiento din&aacute;mico</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>      
+      </div>
+      
+      <div id="tab0" class="content_container">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>E-Hash</h1>
+          <p>Es una herramienta que muestra en forma visual el progreso de aplicar diversas t&eacute;cnicas de Dispersi&oacute;n de Archivos. Configurando unos pocos par&aacute;metros se podr&aacute; ver, analizar y aprender sobre Dispersi&oacute;n de Archivos.</p>
+          <input id="begin_operation" type="button" name="begin_operation" value="Comenzar a Operar" class="new_button" />
+        </div>
+        <div id="content_base"></div>
+      </div>
+     
+      <div id="tab1" class="content_container">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>Tipo de Dispersi&oacute;n</h1>
+          <p>E-Hash presenta dos alternativas para el tratamiento del espacio de direcciones. Ellas son:</p> 
+          <input type="radio" name="tipodispersion" id="tipodispersionest" value="1"/>
+          <label><strong>Dispersi&oacute;n Est&aacute;tica</strong> (El espacio de direcciones debe ser fijado previamente)</label>
+          <br/>
+          <input type="radio" name="tipodispersion" id="tipodispersiondin" value="2"/>
+          <label><strong>Dispersi&oacute;n Din&aacute;mica</strong> (El espacio de direcciones aumenta progresivamente)</label>                   
+        </div>
+        <div id="content_base"></div>
+      </div>
+      
+      <div id="tab2" class="content_container">
+        <div id="content_top"></div>
+        <div id="content">         
+          <h1>Funci&oacute;n de dispersión</h1>          
+          <div class="form_settings">
+            <p><span>Funci&oacute;n de dispersi&oacute;n</span><select name="funcion" id="funcion"><option value='-1'>&gt;&gt; Selecione &lt;&lt;</option><option value="1">M&oacute;dulo tama&ntilde;o memoria</option><option value="2">Centros cuadrados</option><option value="3">Transformaci&oacute;n de la base</option></select></p>
+            <p><span>Base a transformar la clave</span><select name="base" id="base"><option value='-1'>&gt;&gt; Selecione &lt;&lt;</option><option value="11">11 (Undecimal)</option><option value="12">12 (Duodecimal)</option><option value="16">16 (Hexadecimal)</option></select></p>
+          </div>                             
+        </div>
+        <div id="content_base"></div>
+      </div>
+      
+      <div id="tab3" class="content_container">
+        <div id="content_top"></div>
+        <div id="content">          
+          <h1>Configuraci&oacute;n del espacio de direcciones</h1>          
+          <div class="form_settings">          
+            <p><span>Cantidad de direcciones</span><select name="capacidadmemoria" id="capacidadmemoria"><option value='-1'>&gt;&gt; Selecione &lt;&lt;</option><option value="11">11 direcciones</option><option value="13">13 direcciones</option><option value="17">17 direcciones</option><option value="19">19 direcciones</option><option value="23">23 direcciones</option></select></p>
+            <p><span>Densidad de empaquetamiento</span><select name="densidad" id="densidad"><option value='-1'>&gt;&gt; Selecione &lt;&lt;</option><option value="10">10%</option><option value="20">20%</option><option value="30">30%</option><option value="40">40%</option><option value="50">50%</option><option value="60">60%</option><option value="70">70%</option><option value="75">75%</option><option value="80">80%</option><option value="90">90%</option><option value="100">100%</option></select></p>
+            <br/>
+            <br/>
+            <p><span>Capacidad de una direcci&oacute;n</span><select name="capacidadcubeta" id="capacidadcubeta"><option value='-1'>&gt;&gt; Selecione &lt;&lt;</option><option value="1">1 clave</option><option value="2">2 claves</option><option value="3">3 claves</option><option value="4">4 claves</option></select></p>
+            <p><span>Cantidad de claves a dispersar</span><select name="cantidadclaves" id="cantidadclaves"><option value='-1'>&gt;&gt; Selecione &lt;&lt;</option><option value="5">5 claves</option><option value="10">10 claves</option><option value="15">15 claves</option><option value="20">20 claves</option><option id="twenty_five" value="25">25 claves</option><option id="thirty" value="30">30 claves</option></select></p>
+          </div>         
+        </div>
+        <div id="content_base"></div>
+      </div>
+      
+      <div id="tab4" class="content_container">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          
+          <h1>T&eacute;cnica de resoluci&oacute;n de colisiones</h1>
+          <div class="form_settings">
+            <p><span>T&eacute;cnica</span><select name="tecnica" id="tecnica" style="width: 350px;"><option value='-1'>&gt;&gt; Selecione &lt;&lt;</option><option value="1">Saturaci&oacute;n progresiva</option><option value="2">Saturaci&oacute;n progresiva encadenada</option><option value="3">Saturaci&oacute;n progresiva con &aacute;rea de desborde separada</option><option value="4">Dispersi&oacute;n doble</option></select></p>
+            <p><span>Segunda funci&oacute;n de dispersi&oacute;n</span><select name="primo" id="primo" style="width: 350px;"><option value='-1'>&gt;&gt; Selecione &lt;&lt;</option><option value="3">Clave M&oacute;dulo 3</option><option value="5">Clave M&oacute;dulo 5</option><option value="7">Clave M&oacute;dulo 7</option></select></p>
+          </div>          
+          
+        </div>
+        <div id="content_base"></div>
+      </div>
+     
+      <div id="tab6" class="content_container">
+        <div id="content_top"></div>
+        <div id="content">
+        <h1>Disco</h1>        
+        <div id="sidebar_read_write" class="sidebar_rw">
+        <div class="sidebar_top"></div>
+        <div class="sidebar_item">
+        
+          <h5><strong>&Uacute;ltima operaci&oacute;n</strong></h5> 
+          <h5 id="sidebar_read_partial"> Lecturas en disco: 0</h5>
+          <h5 id="sidebar_write_partial"> Escrituras en disco: 0</h5>          
+        
+          <br/>
+        
+          <h5><strong>Totales</strong></h5> 
+          <h5 id="sidebar_read"> Lecturas en disco: 0</h5>
+          <h5 id="sidebar_write"> Escrituras en disco: 0</h5>
+                                     
+        </div>
+        <div class="sidebar_base"></div>
+        </div>
+          <!-- insert the page content here -->          
+          <div id="escenario"></div>  
+          &nbsp;         
+        </div>         
+        <div id="content_base"></div>              
+      </div>      
+    </div>  
+  </div>  
+  <!-- Virtual Keyboard  -->
+  <div id="sidebar_virtual_keyboard"></div>
+  
+  <!-- Messages -->
+  <div id="close_dialog_simulation" title="Finalizar Simulación">
+    <p><span>¿Confirma que desea finalizar la simulaci&oacute;n?</span></p>
+  </div>
+  
+  <div id="operation_restart_dialog" title="Reiniciar Selección">
+    <p><span>Existen par&aacute;metros seleccionados. ¿Confirma que desea reiniciar la operaci&oacute;n?</span></p>
+  </div>
+  
+  <div id="invalid_configuration_memory_space" title="Configuración Inválida">
+    <p><span>La configuraci&oacute;n elegida no es v&aacute;lida.</span></p>
+  </div>
+</body>
+</html>
