@@ -35,20 +35,20 @@ procedure leer(var det: detalle; var dato: provinciaDetalle);
 			dato.cod:= valorAlto;
 	end;
 procedure minimo(var det: arrayDetalle; var regd: regDetalle; var min: provinciaDetalle);
-var
-	i, posMin: integer;
-begin
-	posMin := -1;
-	min.cod := valorAlto;
-	for i := 1 to df do begin
-		if (regd[i].cod < min.cod) then begin
-			min := regd[i];
-			posMin := i;
+	var
+		i, posMin: integer;
+	begin
+		posMin := -1;
+		min.cod := valorAlto;
+		for i := 1 to df do begin
+			if (regd[i].cod < min.cod) then begin
+				min := regd[i];
+				posMin := i;
+			end;
 		end;
+	  if (posMin <> -1) then
+		leer(det[posMin], regd[posMin]);
 	end;
-  if (posMin <> -1) then
-    leer(det[posMin], regd[posMin]);
-end;
 
 BEGIN
 	assign(mae1,'maestro.dat');
